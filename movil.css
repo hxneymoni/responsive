@@ -1,59 +1,16 @@
-@media (max-width: 400px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .logo {
-        width: 100%;
-        height: auto;
-        margin: 0;
-    }
-
+@media (max-width: 576px) {
     .navbar {
-        margin: 10px 0;
-        width: 100%;
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .navbar a {
         width: 100%;
         text-align: center;
         margin: 5px 0;
-        align-items: flex-start;
     }
 
     .hero {
-        height: auto;
         padding: 20px;
-        flex-direction: column;
-    }
-
-    .team-members {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .member {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .member img {
-        max-width: 100%;
-    }
-
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service {
-        width: 100%;
-        margin: 10px 0;
     }
 
     .projects-gallery {
@@ -63,21 +20,47 @@
 
     .project {
         width: 100%;
-        margin: 10px 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Teléfonos grandes y tabletas (max-width: 768px) */
+@media (max-width: 768px) {
+    .projects-gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
+    .project {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Pantallas medianas (tabletas horizontales y laptops pequeñas) (max-width: 992px) */
+@media (max-width: 992px) {
+    .projects-gallery {
+        gap: 15px;
+    }
+
+    .project {
+        width: calc(50% - 15px);
+    }
+}
+
+/* Pantallas grandes (laptops y desktops grandes) (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .projects-gallery {
+        gap: 20px;
+    }
+
+    .project {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Pantallas extra grandes (desktops grandes y monitores 4K) (max-width: 1400px) */
+@media (max-width: 1400px) {
     .container {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .left, .right {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .footer {
-        padding: 10px;
-        font-size: 14px;
+        max-width: 1400px;
     }
 }
